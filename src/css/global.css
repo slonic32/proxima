@@ -1,0 +1,93 @@
+:root {
+  /*
+    |============================
+    | text smoothing
+    |============================
+  */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  /*
+  |============================
+  | colors
+  |============================
+*/
+  --color-BLACK: #121212;
+  --color-GRAY: #1d1d1d;
+  --color-BROWN: #bea69e;
+  --color-WHITE: #fff;
+}
+
+/*
+  |============================
+  | text sizes
+  |============================
+*/
+
+.text-header-big {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 44px; /* 110% */
+  letter-spacing: -1.6px;
+}
+
+.text-header-medium {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px; /* 114.286% */
+  letter-spacing: -1.12px;
+}
+
+.text-header-small {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px; /* 114.286% */
+}
+
+.text-paragraph {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 128.571% */
+  letter-spacing: -0.28px;
+}
+
+.text-small {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 128.571% */
+  letter-spacing: -0.28px;
+}
+
+.text-link {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+body {
+  color: var(--color-WHITE);
+  background-color: var(--color-BLACK);
+  font-family: 'DM Sans', sans-serif;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}

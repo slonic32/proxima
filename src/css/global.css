@@ -125,3 +125,26 @@ body {
 button {
   cursor: pointer;
 }
+
+.container {
+  max-width: 335px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 704px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1080px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1240px;
+  }
+}

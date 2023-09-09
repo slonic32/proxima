@@ -131,6 +131,12 @@ button {
   margin: 0 auto;
 }
 
+@media (max-width: 374px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
 @media (min-width: 768px) {
   .container {
     max-width: 704px;

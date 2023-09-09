@@ -31,39 +31,39 @@
   font-size: 40px;
   font-style: normal;
   font-weight: 500;
-  line-height: 44px; /* 110% */
-  letter-spacing: -1.6px;
+  line-height: 1.1; /* 110% */
+  letter-spacing: -0.04em;
 }
 
 .text-header-medium {
   font-size: 28px;
   font-style: normal;
   font-weight: 500;
-  line-height: 32px; /* 114.286% */
-  letter-spacing: -1.12px;
+  line-height: 1.14; /* 114.286% */
+  letter-spacing: -0.04em;
 }
 
 .text-header-small {
-  font-size: 28px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 500;
-  line-height: 32px; /* 114.286% */
+  line-height: 1.2; /* 120% */
 }
 
 .text-paragraph {
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 18px; /* 128.571% */
-  letter-spacing: -0.28px;
+  line-height: 1.29; /* 128.571% */
+  letter-spacing: -0.02em;
 }
 
 .text-small {
-  font-size: 14px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 18px; /* 128.571% */
-  letter-spacing: -0.28px;
+  line-height: 1.33; /* 133.333% */
+  letter-spacing: -0.02em;
 }
 
 .text-link {
@@ -72,6 +72,40 @@
   font-weight: 400;
   line-height: normal;
   text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .text-header-big {
+    font-size: 60px;
+    line-height: 1.07; /* 106.667% */
+  }
+
+  .text-header-medium {
+    font-size: 48px;
+    line-height: 1.13; /* 112.5% */
+  }
+
+  .text-header-small {
+    font-size: 28px;
+    line-height: 1.14; /* 114.286% */
+  }
+
+  .text-paragraph {
+    font-size: 16px;
+    line-height: 1.25; /* 125% */
+  }
+}
+
+@media (min-width: 1280px) {
+  .text-header-big {
+    font-size: 64px;
+    line-height: 1.06; /* 106.25% */
+  }
+
+  .text-small {
+    font-size: 14px;
+    line-height: 1.29; /* 128.571% */
+  }
 }
 
 body {

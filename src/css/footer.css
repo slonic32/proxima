@@ -3,6 +3,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding: 40px 0 20px;
+  scroll-behavior: smooth;
 }
 
 @media screen and (min-device-pixel-ratio: 2),
@@ -45,6 +46,11 @@
 .footer-list-socials-item:not(:last-child),
 .footer-list-menu-item:not(:last-child) {
   margin-bottom: 14px;
+}
+
+.footer-list-socials-link,
+.footer-list-menu-link {
+  transition: color 250ms ease-in-out;
 }
 
 .footer-list-socials-link:hover,
@@ -98,6 +104,8 @@
 
   font-size: 20px;
   line-height: 1.2;
+
+  transition: color 250ms ease-in-out;
 }
 
 .footer-bottom {

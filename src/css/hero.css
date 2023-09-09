@@ -1,0 +1,12 @@
+.hero-section {
+  padding: 40px 20px 0;
+  background: var(--color-GRAY);
+  border-radius: 30px;
+  margin-bottom: 80px;
+}
+
+.hero-header-span {
+  color: var(--color-BROWN);
+  font-style: italic;
+  font-weight: 400;
+}

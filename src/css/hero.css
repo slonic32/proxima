@@ -45,6 +45,12 @@
   }
 }
 
+@media (min-width: 1440px) {
+  .hero-big-container {
+    margin-right: 130px;
+  }
+}
+
 .hero-header-span {
   color: var(--color-BROWN);
   font-style: italic;

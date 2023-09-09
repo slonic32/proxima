@@ -104,7 +104,7 @@
   .hero-paragraph {
     font-size: 14px;
     line-height: 1.29; /* 128.571% */
-    letter-spacing: -0.02;
+    letter-spacing: -0.02em;
     width: 418px;
   }
 

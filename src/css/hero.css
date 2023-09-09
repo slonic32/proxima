@@ -1,11 +1,29 @@
 .hero-section {
+  margin-bottom: 80px;
 }
 
 .hero-section .container {
   padding: 40px 20px 0;
   background: var(--color-GRAY);
   border-radius: 30px;
-  margin-bottom: 80px;
+}
+
+.hero-header {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .hero-section {
+    margin-bottom: 100px;
+  }
+
+  .hero-section .container {
+    padding: 64px 32px 0;
+  }
+
+  .hero-header {
+    width: 517px;
+  }
 }
 
 .hero-header-span {
@@ -14,12 +32,17 @@
   font-weight: 400;
 }
 
-.hero-header {
-  margin-bottom: 20px;
-}
-
 .hero-paragraph {
   margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .hero-paragraph {
+    font-size: 14px;
+    line-height: 1.29; /* 128.571% */
+    letter-spacing: -0.02;
+    width: 418px;
+  }
 }
 
 .hero-students-star-container {
@@ -32,6 +55,17 @@
   margin-right: 40px;
 }
 
+@media (min-width: 768px) {
+  .hero-students-star-container {
+    margin-bottom: 40px;
+  }
+
+  .hero-students-container {
+    display: flex;
+    align-items: start;
+  }
+}
+
 .hero-students-image {
   margin-bottom: 4px;
 }
@@ -41,15 +75,46 @@
   height: 44px;
 }
 
+@media (min-width: 768px) {
+  .hero-students-image {
+    margin-bottom: 0;
+  }
+
+  .hero-students-image {
+    margin-bottom: 0;
+    margin-right: 12px;
+  }
+
+  .hero-students-image img {
+    width: 135px;
+    height: 54px;
+  }
+}
+
 .hero-students-link {
   display: flex;
   align-items: center;
   gap: 4px;
 }
 
+@media (min-width: 768px) {
+  .hero-students-link {
+    display: block;
+  }
+}
+
 .hero-students-text {
   letter-spacing: -0.04em;
   width: 67px;
+}
+
+@media (min-width: 768px) {
+  .hero-students-text {
+    font-size: 16px;
+    line-height: 1.25;
+    width: 82px;
+    margin-bottom: 8px;
+  }
 }
 
 .hero-students-icon {
@@ -70,6 +135,14 @@
   margin-right: 12px;
 }
 
+@media (min-width: 768px) {
+  .hero-star-box {
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+  }
+}
+
 .hero-star-icon {
   stroke: var(--color-BLACK);
   fill: var(--color-BROWN);
@@ -81,6 +154,12 @@
   margin-bottom: 4px;
 }
 
+@media (min-width: 768px) {
+  .hero-review-text {
+    margin-bottom: 8px;
+  }
+}
+
 .text-review-number {
   font-size: 16px;
   font-style: normal;
@@ -89,8 +168,21 @@
   letter-spacing: -0.04em;
 }
 
+@media (min-width: 768px) {
+  .text-review-number {
+    line-height: 1.25;
+  }
+}
+
 .hero-photo img {
   width: 259px;
   height: 314px;
   margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .hero-photo img {
+    width: 393px;
+    height: 434px;
+  }
 }

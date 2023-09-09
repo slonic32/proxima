@@ -29,13 +29,8 @@
   height: 209px;
 }
 
-.about-us-paragraph {
-  height: 143px;
-}
-
-.about-us-image + .about-us-paragraph {
+.about-us-paragraph:first-child {
   margin-bottom: 20px;
-  height: auto;
 }
 
 @media (min-width: 768px) {
@@ -47,11 +42,6 @@
     margin-bottom: 50px;
   }
 
-  .about-us-flex-container {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
   .about-us-image {
     margin-bottom: 50px;
   }
@@ -61,12 +51,17 @@
     height: 340px;
   }
 
-  .about-us-paragraph {
-    width: 280px;
-    height: auto;
+  .about-us-paragraph-list {
+    display: flex;
+    justify-content: start;
+    align-items: start;
   }
 
-  .about-us-image + .about-us-paragraph {
+  .about-us-paragraph {
+    width: 280px;
+  }
+
+  .about-us-paragraph:first-child {
     margin-bottom: 0;
     margin-right: 40px;
   }
@@ -78,6 +73,7 @@
   }
 
   .about-us-flex-container {
+    flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
   }
@@ -94,10 +90,9 @@
 
   .about-us-paragraph {
     width: 264px;
-    height: 260px;
   }
 
-  .about-us-image + .about-us-paragraph {
+  .about-us-paragraph:first-child {
     width: 268px;
     margin-right: 20px;
   }
@@ -113,14 +108,16 @@
     height: 340px;
   }
 
-  .about-us-paragraph {
-    width: 276px;
+  .about-us-paragraph-list {
     height: 215px;
   }
 
-  .about-us-image + .about-us-paragraph {
+  .about-us-paragraph {
+    width: 276px;
+  }
+
+  .about-us-paragraph:first-child {
     width: 330px;
-    height: 215px;
     margin-right: 40px;
   }
 }

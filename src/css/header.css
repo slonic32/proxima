@@ -92,6 +92,7 @@
 .charm-menu {
   width: 32px;
   height: 22px;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -106,14 +107,14 @@
   .charm-menu {
     width: 40px;
     height: 28px;
-  }
-}
+  }}
 
-@media (min-width: 1280px) {
-  .heder-menu-burger {
-    display: none;
+  @media (min-width: 1280px) {
+    .heder-menu-burger {
+      display: none;
+    }
   }
-}
+
 
 .btn-singup {
   width: 186px;
@@ -138,6 +139,13 @@
     display: none;
   }
 }
+
+@media (max-width: 767.98px) {
+  .btn-singup {
+    display: none;
+  }
+}
+
 @media (min-width: 1280px) {
   .btn-singup {
     width: 238px;

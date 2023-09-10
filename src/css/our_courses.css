@@ -1,32 +1,3 @@
-/*
-  |============================
-  | не можна прямо перевизначати атрибути тегів.
-  ці зміни діють не тільки у вашій секції, а для всієї команди.
-  ви ламаєте верстку всього сайту.
-
-  введіть локальні класи або перевизначте для нащадків.
-  |============================
-
-ol {
-  list-style-type: none;
-  counter-reset: li;
-}
-li {
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.28;
-  letter-spacing: -0.02px;
-}
-
-li:before {
-  counter-increment: li;
-  content: counter(li, decimal-leading-zero);
-  color: rgba(255, 255, 255, 0.4);
-}
- |============================
-*/
-
 .courses {
   margin-bottom: 80px;
 }
@@ -50,15 +21,11 @@ li:before {
 @media only screen and (min-width: 768px) {
   .courses-container-wrapper {
     flex-direction: row;
+    justify-content: space-between;
     gap: 0;
     margin-bottom: 50px;
   }
 }
-@media only screen and (min-width: 1280px) {
-  .courses-container-wrapper {
-  }
-}
-
 .courses-header span {
   color: var(--color-BROWN);
 }
@@ -66,6 +33,7 @@ li:before {
 @media only screen and (min-width: 768px) {
   .courses-paragraph {
     width: 381px;
+    height: 80px;
     margin-left: 58px;
   }
 }
@@ -75,12 +43,18 @@ li:before {
     margin-left: 410px;
   }
 }
+@media only screen and (min-width: 1440px) {
+  .courses-paragraph {
+    width: 565px;
+    height: 60px;
+  }
+}
 .courses-list {
+  list-style-type: none;
+  counter-reset: item;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 20px;
-  position: relative;
 }
 @media only screen and (min-width: 768px) {
   .courses-list {
@@ -89,33 +63,47 @@ li:before {
   }
 }
 .courses-list-item {
+  position: relative;
   padding: 28px;
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   background: linear-gradient(180deg, #060707 0%, #1d1d1d 100%);
 }
+
 @media only screen and (min-width: 768px) {
   .courses-list-item {
+    padding: 32px;
     flex-basis: calc((100% - 20px * 1) / 2);
   }
 }
 @media only screen and (min-width: 1280px) {
   .courses-list-item {
     flex-basis: calc((100% - 20px * 2) / 3);
-    height: 452px;
   }
 }
 @media only screen and (min-width: 1440px) {
   .courses-list-item {
-    width: 400px;
+    max-height: 452px;
   }
 }
-.courses-link {
-  display: flex;
-  position: absolute;
-  top: 0;
-  right: 0;
+
+.courses-list-item:before {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  counter-increment: item;
+  content: counter(item, decimal-leading-zero);
+  color: rgba(255, 255, 255, 0.4);
 }
+
+.courses-link {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+}
+
 .courses-link-cirle {
   display: inline-flex;
   align-items: center;
@@ -124,18 +112,48 @@ li:before {
   height: 32px;
   background-color: var(--color-GRAY);
   border-radius: 50%;
+  transition: background-color 250ms ease-in-out;
+}
+
+.courses-link-cirle:hover,
+.courses-link-cirle:focus,
+.courses-link-cirle:active {
+  background-color: var(--color-BROWN);
 }
 .courses-icon {
   stroke: #777777;
+  transition: color 250ms ease-in-out;
 }
+.courses-icon:hover,
+.courses-icon:focus,
+.courses-icon:active {
+  stroke: var(--color-WHITE);
+  fill: var(--color-WHITE);
+}
+.courses-container-card {
+  display: flex;
+  flex-direction: column;
+}
+
 .courses-title {
+  width: 275px;
   font-size: 28px;
-  font-style: normal;
   font-weight: 500;
   line-height: 1.14; /* 114.286% */
-  letter-spacing: -0.04em;
   margin-top: 28px;
   margin-bottom: 164px;
+}
+@media only screen and (min-width: 768px) {
+  .courses-title {
+    width: 275px;
+    margin-top: 32px;
+    margin-bottom: 180px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .courses-title {
+    margin-bottom: 200px;
+  }
 }
 .courses-paragraf-card {
   color: rgba(255, 255, 255, 0.5);

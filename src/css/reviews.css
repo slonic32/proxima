@@ -186,3 +186,30 @@
     letter-spacing: -0.02em;
   }
 }
+
+@media screen and (min-width: 1440px) {
+  .reviews-container {
+    max-width: 1440px;
+  }
+
+  .text-header-medium {
+    line-height: 1.12;
+  }
+
+  .reviews-list-container-one {
+    width: 610px;
+    padding-bottom: 20px;
+  }
+
+  .reviews-list-container-two {
+    width: 610px;
+  }
+
+  .text-paragraph-one {
+    width: 570px;
+  }
+
+  .text-paragraph-two {
+    width: 570px;
+  }
+}

@@ -19,5 +19,11 @@
     <symbol id="icon-star_hero" viewBox="0 0 34 32">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.526" d="m16.842 2.807 4.337 8.786 9.698 1.418-7.018 6.835 1.656 9.656-8.674-4.562-8.674 4.562 1.656-9.656-7.018-6.835 9.698-1.418 4.337-8.786z"/>
     </symbol>
+
+    <!-- Додана іконка кнопки закриття мобільного вікна -->
+    <symbol id="icon-close-menu" viewBox="0 0 40 40">
+      <path d="M30 10L10 30" stroke="#121212" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M10 10L30 30" stroke="#121212" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
   </defs>
 </svg>

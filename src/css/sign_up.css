@@ -1,0 +1,112 @@
+.sign-container{
+    display: flex;
+    flex-direction: row;
+}
+.sign-container-wrapper{
+    max-width: 480px;
+    margin-right: 200px;
+}
+.sign-header{
+    margin-bottom: 20px;
+}
+.block{
+    display: flex;
+    align-content: flex-start;
+}
+.two-photo{
+    display: flex;
+}
+.photo-lens-h{
+    height: 288px;
+    width: 190px;
+    border-radius: 1000px;
+    background: #BEA69E;
+    margin-top: 252px;
+    margin-right: 20px;
+    position: relative;
+}
+.photo-cam-h{
+    width: 350px;
+    height: 540px;
+    border-radius: 1000px;
+    background: #1D1D1D;
+    position: relative;
+}
+.img-lens{
+    position: absolute;
+    top: 63px;
+    right: 18px;
+}
+.img-cam{
+    position: absolute;
+    top: 139px;
+    right: 48px;
+}
+
+.sign-paragraph{
+    margin-bottom: 40px;
+}
+
+.sign-form-input{  
+    height: 60px;
+    border-radius: 12px;
+    outline: transparent;
+    background: var(--color-BLACK);
+    font-size: 16px;
+    line-height: 1.25;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    padding: 20px 340px 20px 18px;
+    max-width: 480px;
+    color: var(--color-WHITE);
+    margin-bottom: 14px;
+}
+.sign-form-f{
+    margin-bottom: 40px;
+}
+.sign-form-comment{
+    height: 120px;
+    border-radius: 12px;
+    outline: transparent;
+    background: var(--color-BLACK);
+    font-size: 16px;
+    line-height: 1.25;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    padding: 20px 340px 20px 18px;
+    max-width: 480px;
+    color: var(--color-WHITE);
+    /* margin-bottom: 40px; */
+    
+}
+.sign-form-btn{
+    border-radius: 12px;
+    background: var(--color-WHITE);
+    color: var(--color-BLACK);
+    width: 479px;
+    height: 60px;
+    font-family: DM Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    /* 155.556% */
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.sign-container-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-header span {
+    color: var(--color-BROWN);
+}
+
+.sign-paragraph-bottom {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+

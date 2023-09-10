@@ -28,44 +28,88 @@
   <body>
     <div class="header-hero-container">
       <header class="head container">
-    <div class="header-box ">
-            
-                <a  class="heder-box-nav-link link" href="">
-                    <svg class="svg-logo" width="123" height="16">
-                        <use href="/proxima/assets/icons-eb1b9a8a.svg#icon-logo"></use>
-                    </svg>
-                </a>
-                <nav class="heder-box-nav">
-                <ul  class="heder-list list">
-                    <li class="heder-item"><a class="text-link link" href="#about">About us</a></li>
-                    <li class="heder-item"><a class="text-link link" href="#courses">Our courses</a></li>
-                    <li class="heder-item"><a class="text-link link" href="#mentors">Our mentors</a></li>
-                    <li class="heder-item"><a class="text-link link" href="#reviews">Reviews</a></li>
-                    <li class="heder-item"><a class="text-link link" href="#contacts">contacts</a></li>
-                </ul>
-            </nav>
-            <div class="fotoburger-box">
-                <!-- fotocamera -->
-                <a  class="heder-fotokamera link" href="">
-                    <svg class="svg-fotocamera" width="16" height="16">
-                        <use href="/proxima/assets/icons-eb1b9a8a.svg#icon-camera_footer"></use>
-                    </svg>
-                </a>
-                <!-- Burger -->
-                <button class="heder-menu-burger">
-                    <a href="">
-                        <svg class="charm-menu" xmlns="http://www.w3.org/2000/svg" width="32" height="22" viewBox="0 0 32 22" fill="none">
-                          <line x1="5.86963" y1="3.66669" x2="31.0001" y2="3.66669" stroke="white" stroke-width="2" stroke-linecap="round"/>
-                          <line x1="5.86963" y1="17" x2="31.0001" y2="17" stroke="white" stroke-width="2" stroke-linecap="round"/>
-                          <line x1="13.5217" y1="10.3333" x2="31" y2="10.3333" stroke="white" stroke-width="2" stroke-linecap="round"/>
-                        </svg>
-                      </a>
-                </button>
-            </div>
-                        
-        </div>
-        <button class="btn-singup" type="button">Sign up</button>
-    </header>
+  <div class="header-box">
+    <a class="heder-box-nav-link link" href="">
+      <svg class="svg-logo" width="123" height="16">
+        <use href="/proxima/assets/icons-eb1b9a8a.svg#icon-logo"></use>
+      </svg>
+    </a>
+    <nav class="heder-box-nav">
+      <ul class="heder-list list">
+        <li class="heder-item">
+          <a class="text-link link" href="#about">About us</a>
+        </li>
+        <li class="heder-item">
+          <a class="text-link link" href="#courses">Our courses</a>
+        </li>
+        <li class="heder-item">
+          <a class="text-link link" href="#mentors">Our mentors</a>
+        </li>
+        <li class="heder-item">
+          <a class="text-link link" href="#reviews">Reviews</a>
+        </li>
+        <li class="heder-item">
+          <a class="text-link link" href="#contacts">contacts</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="fotoburger-box">
+      <!-- fotocamera -->
+      <a class="heder-fotokamera link" href="">
+        <svg class="svg-fotocamera" width="16" height="16">
+          <use href="/proxima/assets/icons-eb1b9a8a.svg#icon-camera_footer"></use>
+        </svg>
+      </a>
+      <!-- Burger -->
+      <button
+        class="heder-menu-burger js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <a href="">
+          <svg
+            class="charm-menu"
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="22"
+            viewBox="0 0 32 22"
+            fill="none"
+          >
+            <line
+              x1="5.86963"
+              y1="3.66669"
+              x2="31.0001"
+              y2="3.66669"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+            <line
+              x1="5.86963"
+              y1="17"
+              x2="31.0001"
+              y2="17"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+            <line
+              x1="13.5217"
+              y1="10.3333"
+              x2="31"
+              y2="10.3333"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+        </a>
+      </button>
+    </div>
+  </div>
+  <button class="btn-singup" type="button">Sign up</button>
+</header>
+
       <section class="hero-section">
   <div class="container">
     <div class="hero-big-container">
@@ -519,30 +563,52 @@
   </div>
 </footer>
 
-    <div class="menu">
-    <div class="menu2">
-      <a href="#about" class="menu-link" aria-label="About us">About us</a>
-      <a href="#courses" class="menu-link" aria-label="Our courses">Our courses</a>
-      <a href="#mentors" class="menu-link" aria-label="Our mentors">Our mentors</a>
-      <a href="#reviews" class="menu-link" aria-label="Reviews">Reviews</a>
-      <a href="#contacts" class="menu-link" aria-label="Contacts">Contacts</a>
+    <div class="menu js-menu-container" id="mobile-menu">
+  <div class="menu2">
+    <a href="#about" class="menu-link" aria-label="About us">About us</a>
+    <a href="#courses" class="menu-link" aria-label="Our courses"
+      >Our courses</a
+    >
+    <a href="#mentors" class="menu-link" aria-label="Our mentors"
+      >Our mentors</a
+    >
+    <a href="#reviews" class="menu-link" aria-label="Reviews">Reviews</a>
+    <a href="#contacts" class="menu-link" aria-label="Contacts">Contacts</a>
   </div>
-    <picture>
-        <source media="(max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 192dpi)" srcset="img/mobile/rectangle_mob@2x.png" alt="Фонове зображення - фотокамера на циліндрах">
-        <source media="(max-width: 767px)" srcset="img/mobile/rectangle_mob.png" alt="Фонове зображення - фотокамера на циліндрах">
-        <source media="(min-width: 768px) and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (max-width: 1023px) and (min-resolution: 192dpi)" srcset="img/tablet/rectangle_tab@2x.png" alt="Фонове зображення - фотокамера на циліндрах">
-        <source media="(min-width: 768px) and (max-width: 1023px)" srcset="img/tablet/rectangle_tab.png" alt="Фонове зображення - фотокамера на циліндрах">
-        <img class="rectangle-6" src="img/mobile/rectangle_mob.png" alt="Фонове зображення - фотокамера на циліндрах">
-    </picture>
-  
-    <button class="js-close-menu" aria-label="Закрити меню">
-      <svg class="icon_close_menu animate__animated">
-          <use xlink:href="/proxima/assets/icons-eb1b9a8a.svg#icon-close-menu"></use>
-      </svg>
-      <span class="visually-hidden">Закрити меню</span>
+  <picture>
+    <source
+      media="(max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 192dpi)"
+      srcset="/proxima/assets/menu_2x-a280dd10.jpg "
+      alt="Фонове зображення - фотокамера на циліндрах"
+    />
+    <source
+      media="(max-width: 767px)"
+      srcset="/proxima/assets/menu-fb244a10.jpg "
+      alt="Фонове зображення - фотокамера на циліндрах"
+    />
+    <source
+      media="(min-width: 768px) and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (max-width: 1023px) and (min-resolution: 192dpi)"
+      srcset="/proxima/assets/menu_2x-a021e49a.jpg "
+      alt="Фонове зображення - фотокамера на циліндрах"
+    />
+    <source
+      media="(min-width: 768px) and (max-width: 1023px)"
+      srcset="/proxima/assets/menu-ece691bb.jpg "
+      alt="Фонове зображення - фотокамера на циліндрах"
+    />
+    <img
+      class="rectangle-6"
+      src="/proxima/assets/menu-fb244a10.jpg"
+      alt="Фонове зображення - фотокамера на циліндрах"
+    />
+  </picture>
+  <button class="js-close-menu" aria-label="Закрити меню">
+    <svg class="icon_close_menu animate__animated">
+      <use xlink:href="/proxima/assets/icons-eb1b9a8a.svg#icon-close-menu"></use>
+    </svg>
+    <span class="visually-hidden">Закрити меню</span>
   </button>
-  
-  </div>
+</div>
 
     <!--
       |============================

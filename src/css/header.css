@@ -1,7 +1,11 @@
 .head {
-  display: flex;
-  gap: 20px;
-  align-items: center;
+
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+    
+
 }
 .header-box {
   display: flex;
@@ -11,26 +15,34 @@
   height: 50px;
   border-radius: 12px;
 
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  background-color: var(--color-BLACK);
-  margin: 20px 0;
-  padding: 17px 14px 17px 20px;
+border: 1px solid rgba(255, 255, 255, 0.20);
+background-color: var(--color-BLACK);
+margin-top: 20px;
+padding: 17px 14px 17px 20px;
 }
-@media (min-width: 768px) and (max-width: 1279.98px) {
-  .header-box {
-    max-width: 504px;
-    height: 60px;
-  }
-  .head {
-    gap: 14px;
-  }
+@media (min-width: 768px) and (max-width:1279.98px){
+    .header-box{
+        max-width: 504px;
+        height: 60px;
+        
+    }
+    .head{
+        gap: 14px;
+        margin-bottom: 40px;
+    }
 }
 @media (min-width: 1280px) {
-  .header-box {
-    max-width: 822px;
-    height: 60px;
-    padding: 21px 50px;
-  }
+    .header-box{
+        max-width: 822px;
+        height: 60px;
+        padding: 21px 50px;
+        
+    }
+    .head{
+        margin-bottom: 80px;
+    }
+
+
 }
 
 .heder-box-nav {
@@ -58,12 +70,18 @@
   gap: 28px;
 }
 
-.fotoburger-box {
-  display: flex;
-  gap: 14px;
+.heder-item .text-link:hover,
+.heder-item .text-link:focus{
+    color: var(--color-BROWN);
+}
+.fotoburger-box{
+    display: flex;
+    gap: 14px;
+
 }
 
 .heder-fotokamera {
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -78,6 +96,7 @@
   .heder-fotokamera {
     display: none;
   }
+
 }
 
 .svg-fotocamera {
@@ -117,6 +136,7 @@
 
 
 .btn-singup {
+
   width: 186px;
   height: 60px;
   color: var(--color-BLACK);
@@ -152,3 +172,4 @@
     padding: 16px 80px;
   }
 }
+

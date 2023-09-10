@@ -11,6 +11,11 @@ ul {
 .header-text-style-mentor{
     margin-bottom: 50px;
 }
+@media screen and (min-width: 768px) {
+    .header-text-style-mentor{
+        margin-bottom: 40px;
+    }
+}
 .mentor-list-container{
     display: flex;
     text-align: center;
@@ -19,9 +24,32 @@ ul {
     justify-content: center;
     gap: 40px;
 }
-
+@media screen and (min-width: 768px) {
+    .mentor-list-container {
+        flex-direction: row;
+        padding-left: 115px;
+        padding-right: 115px;
+        flex-wrap: wrap;
+        column-gap: 100px;
+        row-gap: 93px;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .mentor-list-container {
+        gap: 93px;
+        padding-left: 33px;
+        padding-right: 33px;
+    }
+}
+@media (min-width: 1440px){
+    .mentor-list-container{
+        gap: 113px;
+        padding-left: 84px;
+        padding-right: 32px;
+    }
+}
 .mentor-item-container {
-    max-width: 185px;
+    max-width: 194px;
 }
 
 /* .mentor-item-container {

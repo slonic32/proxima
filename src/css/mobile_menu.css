@@ -1,143 +1,143 @@
 /* Стилі для мобільного меню */
 .menu {
-    display: none;
-    background: var(--brown, #bea69e);
-    position: fixed; 
-    overflow: hidden;
-    width: 218px;
-    height: 812px;
-    right: 0; 
-    top: 0; 
+  display: none;
+  background: var(--brown, #bea69e);
+  position: fixed;
+  overflow: hidden;
+  width: 218px;
+  height: 812px;
+  right: 0;
+  top: 0;
 }
 
 .menu.is-open {
-    display: block;
+  display: block;
 }
 
 .menu2 {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: absolute;
-    left: calc(50% - 89px); 
-    top: 180px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  left: calc(50% - 89px);
+  top: 180px;
 }
 
 .menu-link {
-    color: var(--black, #121212);
-    text-align: left;
-    font: 400 14px "DM Sans", sans-serif;
-    text-transform: uppercase;
-    position: relative;
-    text-decoration: none;
+  color: var(--black, #121212);
+  text-align: left;
+  font: 400 14px 'DM Sans', sans-serif;
+  text-transform: uppercase;
+  position: relative;
+  text-decoration: none;
 }
 
-.menu-link:hover, 
+.menu-link:hover,
 .menu-link:focus {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .js-close-menu {
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    overflow: visible;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  overflow: visible;
 }
 
 .js-close-menu:focus {
-    outline: none; 
+  outline: none;
 }
 
 @keyframes customRotateInOut {
-    0% {
-        transform: rotate(0deg);
-        opacity: 1;
-    }
-    50% {
-        transform: rotate(90deg);
-        opacity: 0;
-    }
-    51% {
-        transform: rotate(90deg);
-        opacity: 0;
-    }
-    100% {
-        transform: rotate(0deg);
-        opacity: 1;
-    }
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: rotate(90deg);
+    opacity: 0;
+  }
+  51% {
+    transform: rotate(90deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
 }
 
 .js-close-menu:hover .icon_close_menu,
 .js-close-menu:focus .icon_close_menu {
-    animation: customRotateInOut 2s forwards;
+  animation: customRotateInOut 2s forwards;
 }
 
 .rectangle-6 {
-    width: 329px;
-    position: absolute;
-    left: 0px;
-    top: 483px;
+  width: 329px;
+  position: absolute;
+  left: 0px;
+  top: 483px;
 }
 
 .icon_close_menu {
-    width: 40px;
-    height: 40px;
+  width: 40px;
+  height: 40px;
 }
 
 /* Стилі для планшетного меню */
 @media (min-width: 768px) and (max-width: 1023px) {
-    .menu {
-        width: 480px; 
-        height: 1024px; 
-    }
+  .menu {
+    width: 480px;
+    height: 1024px;
+  }
 
-    .menu2 {
-        gap: 28px;
-        left: calc(50% - 176px);
-        top: 232px;
-    }
+  .menu2 {
+    gap: 28px;
+    left: calc(50% - 176px);
+    top: 232px;
+  }
 
-    .js-close-menu {
-        right: 32px;
-    }
+  .js-close-menu {
+    right: 32px;
+  }
 
-    .menu-link {
-        font-size: 16px;
-    }
+  .menu-link {
+    font-size: 16px;
+  }
 
-    .rectangle-6 {
-        width: 480px;
-        height: 476px;
-        top: 548px;
-    }
+  .rectangle-6 {
+    width: 480px;
+    height: 476px;
+    top: 548px;
+  }
 
-    .icon_close_menu {
-        width: 40px;
-        height: 40px;
-    }
+  .icon_close_menu {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 @media (min-width: 1024px) {
-    .menu {
-        display: none; 
-    }
+  .menu {
+    display: none;
+  }
 }
 
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }

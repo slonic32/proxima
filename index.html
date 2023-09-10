@@ -23,7 +23,7 @@
       referrerpolicy="no-referrer"
     />
     
-    <link rel="stylesheet" href="/proxima/assets/index-69c234df.css">
+    <link rel="stylesheet" href="/proxima/assets/index-69751ea1.css">
   </head>
   <body>
     <div class="header-hero-container">
@@ -485,14 +485,15 @@
       </div>
 
       <form class="footer-form" name="subscribe_form">
-        <label class="footer-form-label">
-          <input
-            class="footer-form-input"
-            name="subscribe-email"
-            type="email"
-            placeholder="Enter your email"
-          />
-        </label>
+        <input
+          class="footer-form-input"
+          name="subscribe-email"
+          type="email"
+          placeholder="Enter your email"
+          pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+          required
+          autocomplete="on"
+        />
         <button class="footer-form-button" type="submit">Go</button>
       </form>
     </div>

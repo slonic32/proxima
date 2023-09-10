@@ -108,6 +108,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: var(--color-WHITE);
   background-color: var(--color-BLACK);

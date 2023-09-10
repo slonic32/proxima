@@ -23,7 +23,7 @@
       referrerpolicy="no-referrer"
     />
     
-    <link rel="stylesheet" href="/proxima/assets/index-192ff295.css">
+    <link rel="stylesheet" href="/proxima/assets/index-938bd56d.css">
   </head>
   <body>
     <div class="header-hero-container">
@@ -577,53 +577,38 @@
   </div>
 </footer>
 
-    <div class="menu js-menu-container" id="mobile-menu">
-  <div class="menu2">
-    <a href="#about" class="menu-link" aria-label="About us">About us</a>
-    <a href="#courses" class="menu-link" aria-label="Our courses"
-      >Our courses</a
-    >
-    <a href="#mentors" class="menu-link" aria-label="Our mentors"
-      >Our mentors</a
-    >
-    <a href="#reviews" class="menu-link" aria-label="Reviews">Reviews</a>
-    <a href="#contacts" class="menu-link" aria-label="Contacts">Contacts</a>
-  </div>
-  <picture>
-    <source
-      media="(max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 192dpi)"
-      srcset="/proxima/assets/menu_2x-a280dd10.jpg "
-      alt="Фонове зображення - фотокамера на циліндрах"
-    />
-    <source
-      media="(max-width: 767px)"
-      srcset="/proxima/assets/menu-fb244a10.jpg "
-      alt="Фонове зображення - фотокамера на циліндрах"
-    />
-    <source
-      media="(min-width: 768px) and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (max-width: 1023px) and (min-resolution: 192dpi)"
-      srcset="/proxima/assets/menu_2x-a021e49a.jpg "
-      alt="Фонове зображення - фотокамера на циліндрах"
-    />
-    <source
-      media="(min-width: 768px) and (max-width: 1023px)"
-      srcset="/proxima/assets/menu-ece691bb.jpg "
-      alt="Фонове зображення - фотокамера на циліндрах"
-    />
-    <img
-      class="rectangle-6"
-      src="/proxima/assets/menu-fb244a10.jpg"
-      alt="Фонове зображення - фотокамера на циліндрах"
-    />
-  </picture>
-  <button class="js-close-menu" aria-label="Закрити меню">
-    <svg class="icon_close_menu animate__animated">
-      <use xlink:href="/proxima/assets/icons-fb429913.svg#icon-close-menu"></use>
-    </svg>
-    <span class="visually-hidden">Закрити меню</span>
+    <div class="menu mobile-menu js-menu-container" id="mobile-menu">
+  <!-- Кнопка закриття меню -->
+  <button class="mobile-menu-close js-close-menu" aria-label="Закрити меню">
+      <svg class="icon_close_menu animate__animated">
+          <use xlink:href="/proxima/assets/icons-fb429913.svg#icon-close-menu"></use>
+      </svg>
+      <span class="visually-hidden">Закрити меню</span>
   </button>
-</div>
 
+  <div class="mobile-menu-content menu2">
+      <!-- Список навігації -->
+      <ul>
+          <li><a href="#about" class="menu-link" aria-label="About us">About us</a></li>
+          <li><a href="#courses" class="menu-link" aria-label="Our courses">Our courses</a></li>
+          <li><a href="#mentors" class="menu-link" aria-label="Our mentors">Our mentors</a></li>
+          <li><a href="#reviews" class="menu-link" aria-label="Reviews">Reviews</a></li>
+          <li><a href="#contacts" class="menu-link" aria-label="Contacts">Contacts</a></li>
+      </ul>
+
+  </div>
+
+
+  <!-- Зображення -->
+  <picture>
+    <source media="(max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 192dpi)" srcset="/proxima/assets/menu_2x-a280dd10.jpg " />
+    <source media="(max-width: 767px)" srcset="/proxima/assets/menu-fb244a10.jpg " />
+    <source media="(min-width: 768px) and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (max-width: 1023px) and (min-resolution: 192dpi)" srcset="/proxima/assets/menu_2x-a021e49a.jpg " />
+    <source media="(min-width: 768px) and (max-width: 1023px)" srcset="/proxima/assets/menu-ece691bb.jpg " />
+    <img class="rectangle-6" src="/proxima/assets/menu-fb244a10.jpg" />
+  </picture>
+
+</div>
     <!--
       |============================
       | JS

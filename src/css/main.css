@@ -16,3 +16,57 @@
 @import url('./reviews.css');
 @import url('./footer.css');
 @import url('./mobile_menu.css');
+
+.header-hero-container {
+  background-image: url(../img/mobile/header_hero_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 499px;
+  margin: 0 auto;
+}
+
+@media (min-resolution: 192dpi) {
+  .header-hero-container {
+    background-image: url(../img/mobile/header_hero_bg_2x.png);
+  }
+}
+
+@media (min-width: 768px) {
+  .header-hero-container {
+    background-image: url(../img/tablet/header_hero_bg.png);
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 768px) and (min-resolution: 192dpi) {
+  .header-hero-container {
+    background-image: url(../img/tablet/header_hero_bg_2x.png);
+  }
+}
+
+@media (min-width: 1280px) {
+  .header-hero-container {
+    background-image: url(../img/desktop_1280/header_hero_bg.png);
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1280px) and (min-resolution: 192dpi) {
+  .header-hero-container {
+    background-image: url(../img/desktop_1280/header_hero_bg_2x.png);
+  }
+}
+
+@media (min-width: 1440px) {
+  .header-hero-container {
+    background-image: url(../img/desktop_1440/header_hero_bg.png);
+    max-width: 1440px;
+  }
+}
+
+@media (min-width: 1440px) and (min-resolution: 192dpi) {
+  .header-hero-container {
+    background-image: url(../img/desktop_1440/header_hero_bg_2x.png);
+  }
+}

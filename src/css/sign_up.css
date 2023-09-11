@@ -3,8 +3,8 @@
     flex-direction: row;
 }
 .sign-container-wrapper{
-    max-width: 480px;
-    margin-right: 200px;
+    max-width: 335px;
+    margin-right: 80px;
 }
 .sign-header{
     margin-bottom: 20px;
@@ -15,10 +15,13 @@
 }
 .two-photo{
     display: flex;
+    display: none;
 }
+
+
+
+
 .photo-lens-h{
-    height: 288px;
-    width: 190px;
     border-radius: 1000px;
     background: #BEA69E;
     margin-top: 252px;
@@ -26,21 +29,15 @@
     position: relative;
 }
 .photo-cam-h{
-    width: 350px;
-    height: 540px;
     border-radius: 1000px;
     background: #1D1D1D;
     position: relative;
 }
 .img-lens{
     position: absolute;
-    top: 63px;
-    right: 18px;
 }
 .img-cam{
     position: absolute;
-    top: 139px;
-    right: 48px;
 }
 
 .sign-paragraph{
@@ -48,43 +45,41 @@
 }
 
 .sign-form-input{  
-    height: 60px;
-    border-radius: 12px;
-    outline: transparent;
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+        /* 128.571% */
     background: var(--color-BLACK);
-    font-size: 16px;
-    line-height: 1.25;
+    /* font-size: 16px;
+    line-height: 1.25; */
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.20);
-    padding: 20px 340px 20px 18px;
-    max-width: 480px;
+    padding: 14px 212px 14px 18px;
+    max-width: 335px;
     color: var(--color-WHITE);
-    margin-bottom: 14px;
+    margin-bottom: 8px;
 }
 .sign-form-f{
     margin-bottom: 40px;
 }
 .sign-form-comment{
-    height: 120px;
-    border-radius: 12px;
-    outline: transparent;
+    height: 112px;
     background: var(--color-BLACK);
-    font-size: 16px;
-    line-height: 1.25;
-    border-radius: 12px;
+    font-size: 14px;
     border: 1px solid rgba(255, 255, 255, 0.20);
-    padding: 20px 340px 20px 18px;
-    max-width: 480px;
-    color: var(--color-WHITE);
-    /* margin-bottom: 40px; */
-    
+    padding: 15px 250px 20px 18px;
+    max-width: 335px;
+    color: var(--color-WHITE); 
+    border-radius: 12px;
 }
 .sign-form-btn{
     border-radius: 12px;
     background: var(--color-WHITE);
     color: var(--color-BLACK);
-    width: 479px;
-    height: 60px;
+    width: 335px;
+    height: 48px;
     font-family: DM Sans;
     font-size: 18px;
     font-style: normal;
@@ -109,4 +104,92 @@
 }
 
 
+@media only screen and (min-width: 768px) {
+    .sign-form-input {
+        margin-bottom: 14px;
+        height: 60px;
+        min-width: 480px;
+        padding: 20px 340px 20px 18px;
+        height: 46px;
+        outline: transparent;
+        font-size: 16px;
+        line-height: 1.25; 
+    }
+    .sign-form-btn{
+        width: 479px;
+        height: 60px;
+    }
+    .sign-container-wrapper {
+        max-width: 480px;
+    }
+    .sign-form-comment{
+        padding: 20px 340px 20px 18px;
+        max-width: 480px;
+        height: 120px;
+        border-radius: 12px;
+        outline: transparent;
+        font-size: 16px;
+        line-height: 1.25;
+    }
 
+}
+
+@media only screen and (min-width: 1280px) {
+    .two-photo {
+        display: flex;
+    }
+
+    .photo-cam-h {
+        width: 340px;
+        height: 540px;
+    }
+
+    .photo-lens-h {
+        width: 180px;
+        height: 288px;
+    }
+
+    .img-cam {
+        width: 240px;
+        height: 296px;
+        top: 139px;
+        right: 48px;
+    }
+
+    .img-lens {
+        width: 150px;
+        height: 142px;
+        top: 80px;
+        right: 30px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .sign-container-wrapper {
+        margin-right: 200px;
+    }
+
+    .photo-cam-h {
+        width: 350px;
+        height: 540px;
+    }
+
+    .photo-lens-h {
+        width: 190px;
+        height: 288px;
+    }
+
+    .img-cam {
+        width: 254px;
+        height: 313px;
+        top: 139px;
+        right: 48px;
+    }
+
+    .img-lens {
+        width: 163px;
+        height: 154px;
+        top: 80px;
+        right: 30px;
+    }
+}

@@ -79,7 +79,7 @@ padding: 17px 14px 17px 20px;
     color: rgba(190, 166, 158, 0.4);
     transition: color 250ms ease-in-out;
 }
-.heder-fotokamera:hover,
+.heder-fotokamera:hove,
 .heder-fotokamera:focus{
     color: var(--color-BROWN);
 }

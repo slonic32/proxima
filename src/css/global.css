@@ -116,6 +116,7 @@ body {
   color: var(--color-WHITE);
   background-color: var(--color-BLACK);
   font-family: 'DM Sans', sans-serif;
+  overflow: auto;
 }
 
 .list {

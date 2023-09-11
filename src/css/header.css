@@ -124,9 +124,9 @@ display: flex;
     margin-top: 20px;
     color:var(--color-BLACK);
 font-size: 18px;
-
 font-weight: 700;
 line-height: 1.56; /* 155.556% */
+text-decoration: none;
 text-transform: uppercase;
     display: inline-flex;
 padding: 16px 52px;

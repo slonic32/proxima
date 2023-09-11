@@ -1,7 +1,6 @@
-
 /* Стилі для мобільного меню */
 .menu {
-  display: none;
+  /* display: none;*/
   background: var(--brown, #bea69e);
   position: fixed;
   overflow: hidden;
@@ -9,11 +8,20 @@
   height: 100vh;
   right: 0;
   top: 0;
-  transition: visibility 0s 2.5s, transform 2.5s, opacity 2.5s; 
+  /*transition: visibility 0s 2.5s, transform 2.5s, opacity 2.5s;*/
+  /*
+  |============================
+  | menu logic
+  |============================
+*/
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
 }
 
 .menu.is-open {
-  display: block;
+  /*display: block;*/
+  transform: translateX(0);
 }
 
 .menu2 {
@@ -78,7 +86,7 @@
   height: 32px;
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1279px) {
   .menu {
     width: 480px;
     height: 1024px;
@@ -108,14 +116,14 @@
   }
 }
 
-@media (min-width: 1024px) {
+/* @media (min-width: 1280px) {
   .menu {
-      visibility: hidden;
-      position: absolute;
-      top: -9999px;
-      left: -9999px;
+    visibility: hidden;
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
   }
-}
+}*/
 
 .visually-hidden {
   position: absolute;

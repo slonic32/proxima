@@ -1,17 +1,3 @@
-.courses {
-  margin-bottom: 80px;
-}
-@media only screen and (min-width: 768px) {
-  .courses {
-    margin-bottom: 100px;
-  }
-}
-@media only screen and (min-width: 1280px) {
-  .courses {
-    margin-bottom: 150px;
-  }
-}
-
 .courses-container-wrapper {
   display: flex;
   flex-direction: column;

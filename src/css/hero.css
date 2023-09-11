@@ -1,5 +1,5 @@
-.hero-section .container {
-  padding: 40px 20px 0;
+.hero-wrapper {
+  padding: 40px 0 0;
   background: var(--color-GRAY);
   border-radius: 30px;
 }
@@ -9,7 +9,7 @@
 }
 
 @media (min-width: 768px) {
-  .hero-section .container {
+  .hero-wrapper {
     padding: 64px 32px 0;
   }
 
@@ -19,7 +19,7 @@
 }
 
 @media (min-width: 1280px) {
-  .hero-section .container {
+  .hero-wrapper {
     padding: 80px 50px 0;
     display: flex;
   }

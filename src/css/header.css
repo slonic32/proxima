@@ -97,6 +97,7 @@ padding: 17px 14px 17px 20px;
    
 }
 .charm-menu{
+    stroke: var(--color-WHITE);
   width: 32px;
   height: 22px;
 display: flex;

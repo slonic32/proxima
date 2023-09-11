@@ -134,27 +134,25 @@
 }
 
 .btn-singup {
-
-    width: 186px;
-    height: 60px;
-    margin-top: 20px;
-    color:var(--color-BLACK);
-font-size: 18px;
-font-weight: 700;
-line-height: 1.56; /* 155.556% */
-text-decoration: none;
-text-transform: uppercase;
-    display: inline-flex;
-padding: 16px 52px;
-justify-content: center;
-align-items: center;
-border-radius: 12px;
-background-color:var(--color-WHITE);
-border: none;
-transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: ease-in-out;
-
+  width: 186px;
+  height: 60px;
+  margin-top: 20px;
+  color: var(--color-BLACK);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.56; /* 155.556% */
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-flex;
+  padding: 16px 52px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  background-color: var(--color-WHITE);
+  border: none;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: ease-in-out;
 }
 .btn-singup:hover,
 .btn-singup:focus {

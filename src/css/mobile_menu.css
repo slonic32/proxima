@@ -61,11 +61,6 @@
   top: 20px;
 }
 
-.js-close-menu:hover .icon_close_menu,
-.js-close-menu:focus .icon_close_menu {
-  animation: customRotateInOut 2s forwards;
-}
-
 .rectangle-6 {
   width: 100%;
   position: absolute;
@@ -78,10 +73,10 @@
   height: 32px;
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1279px) {
   .menu {
     width: 480px;
-    height: 1024px;
+    height: 100vh;
   }
 
   .menu2 {
@@ -108,7 +103,7 @@
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   .menu {
       visibility: hidden;
       position: absolute;

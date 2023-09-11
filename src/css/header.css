@@ -101,13 +101,19 @@
   fill: currentColor;
 }
 
+.heder-fotokamera:hover .svg-fotocamera,
+.heder-fotokamera:active .svg-fotocamera,
+.heder-fotokamera:focus .svg-fotocamera {
+  fill: #bea69e;
+}
+
 .heder-menu-burger {
   background-color: var(--color-BLACK);
   border: none;
 }
 
-.charm-menu{
-    stroke: var(--color-WHITE);
+.charm-menu {
+  stroke: var(--color-WHITE);
 
   width: 32px;
   height: 22px;

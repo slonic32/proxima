@@ -1,0 +1,195 @@
+.sign-container {
+  display: flex;
+  flex-direction: row;
+}
+.sign-container-wrapper {
+  max-width: 335px;
+}
+.sign-header {
+  margin-bottom: 20px;
+}
+.block {
+  display: flex;
+  align-content: flex-start;
+}
+.two-photo {
+  display: flex;
+  display: none;
+}
+
+.photo-lens-h {
+  border-radius: 1000px;
+  background: #bea69e;
+  margin-top: 252px;
+  margin-right: 20px;
+  position: relative;
+}
+.photo-cam-h {
+  border-radius: 1000px;
+  background: #1d1d1d;
+  position: relative;
+}
+.img-lens {
+  position: absolute;
+}
+.img-cam {
+  position: absolute;
+}
+
+.sign-paragraph {
+  margin-bottom: 40px;
+}
+
+.sign-form-input {
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  /* 128.571% */
+  background: var(--color-BLACK);
+  /* font-size: 16px;
+    line-height: 1.25; */
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 14px 18px;
+  width: 100%;
+  max-width: 335px;
+  color: var(--color-WHITE);
+  margin-bottom: 8px;
+}
+.sign-form-f {
+  margin-bottom: 40px;
+}
+.sign-form-comment {
+  height: 112px;
+  background: var(--color-BLACK);
+  font-size: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 14px 18px;
+  width: 100%;
+  max-width: 335px;
+  color: var(--color-WHITE);
+  border-radius: 12px;
+}
+.sign-form-btn {
+  border-radius: 12px;
+  background: var(--color-WHITE);
+  color: var(--color-BLACK);
+  width: 100%;
+  max-width: 335px;
+  height: 48px;
+  font-family: DM Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  /* 155.556% */
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.sign-container-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.sign-header span {
+  color: var(--color-BROWN);
+}
+
+.sign-paragraph-bottom {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+@media only screen and (min-width: 768px) {
+  .sign-form-input {
+    margin-bottom: 14px;
+    height: 60px;
+    min-width: 480px;
+    padding: 20px 340px 20px 18px;
+    height: 46px;
+    outline: transparent;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+  .sign-form-btn {
+    width: 479px;
+    height: 60px;
+  }
+  .sign-container-wrapper {
+    max-width: 480px;
+  }
+  .sign-form-comment {
+    padding: 20px 340px 20px 18px;
+    max-width: 480px;
+    height: 120px;
+    border-radius: 12px;
+    outline: transparent;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .two-photo {
+    display: flex;
+  }
+
+  .photo-cam-h {
+    width: 340px;
+    height: 540px;
+  }
+
+  .photo-lens-h {
+    width: 180px;
+    height: 288px;
+  }
+
+  .img-cam {
+    width: 240px;
+    height: 296px;
+    top: 139px;
+    right: 48px;
+  }
+
+  .img-lens {
+    width: 150px;
+    height: 142px;
+    top: 80px;
+    right: 30px;
+  }
+  .sign-container-wrapper {
+    margin-right: 60px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .sign-container-wrapper {
+    margin-right: 200px;
+  }
+
+  .photo-cam-h {
+    width: 350px;
+    height: 540px;
+  }
+
+  .photo-lens-h {
+    width: 190px;
+    height: 288px;
+  }
+
+  .img-cam {
+    width: 254px;
+    height: 313px;
+    top: 139px;
+    right: 48px;
+  }
+
+  .img-lens {
+    width: 163px;
+    height: 154px;
+    top: 80px;
+    right: 30px;
+  }
+}

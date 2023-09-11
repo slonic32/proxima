@@ -108,6 +108,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: var(--color-WHITE);
   background-color: var(--color-BLACK);
@@ -131,15 +135,33 @@ button {
   margin: 0 auto;
 }
 
+section {
+  padding-bottom: 80px;
+}
+
+@media (max-width: 374px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
 @media (min-width: 768px) {
   .container {
     max-width: 704px;
+  }
+
+  section {
+    padding-bottom: 100px;
   }
 }
 
 @media (min-width: 1280px) {
   .container {
     max-width: 1080px;
+  }
+
+  section {
+    margin-bottom: 150px;
   }
 }
 

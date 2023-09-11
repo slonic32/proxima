@@ -131,7 +131,8 @@ button {
 }
 
 .container {
-  max-width: 335px;
+  max-width: 375px;
+  padding: 0 20px;
   margin: 0 auto;
 }
 
@@ -139,15 +140,10 @@ section {
   padding-bottom: 80px;
 }
 
-@media (max-width: 374px) {
-  .container {
-    padding: 0 20px;
-  }
-}
-
 @media (min-width: 768px) {
   .container {
     max-width: 704px;
+    padding: 0;
   }
 
   section {
@@ -161,7 +157,7 @@ section {
   }
 
   section {
-    margin-bottom: 150px;
+    padding-bottom: 150px;
   }
 }
 

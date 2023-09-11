@@ -1,46 +1,32 @@
-<div class="menu js-menu-container" id="mobile-menu">
-  <div class="menu2">
-    <a href="#about" class="menu-link" aria-label="About us">About us</a>
-    <a href="#courses" class="menu-link" aria-label="Our courses"
-      >Our courses</a
-    >
-    <a href="#mentors" class="menu-link" aria-label="Our mentors"
-      >Our mentors</a
-    >
-    <a href="#reviews" class="menu-link" aria-label="Reviews">Reviews</a>
-    <a href="#contacts" class="menu-link" aria-label="Contacts">Contacts</a>
-  </div>
-  <picture>
-    <source
-      media="(max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 192dpi)"
-      srcset="img/mobile/menu_2x.jpg"
-      alt="Фонове зображення - фотокамера на циліндрах"
-    />
-    <source
-      media="(max-width: 767px)"
-      srcset="img/mobile/menu.jpg"
-      alt="Фонове зображення - фотокамера на циліндрах"
-    />
-    <source
-      media="(min-width: 768px) and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (max-width: 1023px) and (min-resolution: 192dpi)"
-      srcset="img/tablet/menu_2x.jpg"
-      alt="Фонове зображення - фотокамера на циліндрах"
-    />
-    <source
-      media="(min-width: 768px) and (max-width: 1023px)"
-      srcset="img/tablet/menu.jpg"
-      alt="Фонове зображення - фотокамера на циліндрах"
-    />
-    <img
-      class="rectangle-6"
-      src="img/mobile/menu.jpg"
-      alt="Фонове зображення - фотокамера на циліндрах"
-    />
-  </picture>
-  <button class="js-close-menu" aria-label="Закрити меню">
-    <svg class="icon_close_menu animate__animated">
-      <use xlink:href="img/icons.svg#icon-close-menu"></use>
-    </svg>
-    <span class="visually-hidden">Закрити меню</span>
+<div class="menu mobile-menu js-menu-container" id="mobile-menu">
+  <!-- Кнопка закриття меню -->
+  <button class="mobile-menu-close js-close-menu" aria-label="Закрити меню">
+      <svg class="icon_close_menu animate__animated">
+          <use xlink:href="img/icons.svg#icon-close-menu"></use>
+      </svg>
+      <span class="visually-hidden">Закрити меню</span>
   </button>
+
+  <div class="mobile-menu-content menu2">
+      <!-- Список навігації -->
+      <ul>
+          <li><a href="#about" class="menu-link" aria-label="About us">About us</a></li>
+          <li><a href="#courses" class="menu-link" aria-label="Our courses">Our courses</a></li>
+          <li><a href="#mentors" class="menu-link" aria-label="Our mentors">Our mentors</a></li>
+          <li><a href="#reviews" class="menu-link" aria-label="Reviews">Reviews</a></li>
+          <li><a href="#contacts" class="menu-link" aria-label="Contacts">Contacts</a></li>
+      </ul>
+
+  </div>
+
+
+  <!-- Зображення -->
+  <picture>
+    <source media="(max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 192dpi)" srcset="img/mobile/menu_2x.jpg" />
+    <source media="(max-width: 767px)" srcset="img/mobile/menu.jpg" />
+    <source media="(min-width: 768px) and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (max-width: 1023px) and (min-resolution: 192dpi)" srcset="img/tablet/menu_2x.jpg" />
+    <source media="(min-width: 768px) and (max-width: 1023px)" srcset="img/tablet/menu.jpg" />
+    <img class="rectangle-6" src="img/mobile/menu.jpg" />
+  </picture>
+
 </div>

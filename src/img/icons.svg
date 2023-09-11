@@ -22,5 +22,8 @@
     <symbol id="icon-close-menu" viewBox="0 0 40 40">
       <path stroke="#121212" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M30 10 10 30M10 10l20 20"/>
     </symbol>
+    <symbol id="icon-burger" viewBox="0 0 45 32">
+      <path stroke-linecap="round" stroke-width="3.097" d="M7.832 4.583h31.91M7.832 22.1h31.91M17.706 13.341h22.036"/>
+    </symbol>
   </defs>
 </svg>

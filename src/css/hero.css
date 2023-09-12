@@ -53,10 +53,11 @@
   display: flex;
   align-items: start;
   margin-bottom: 31px;
+  justify-content: space-between;
+  width: 251px;
 }
 
 .hero-students-container {
-  margin-right: 40px;
 }
 
 .hero-students-image {
@@ -86,7 +87,7 @@
 .hero-students-link:focus .hero-students-text,
 .hero-students-link:active .hero-students-text {
   color: var(--color-BROWN);
-  transform: scale(1.25);
+  transform: scale(1.1);
   z-index: 10;
 }
 
@@ -100,6 +101,7 @@
 
   .hero-students-star-container {
     margin-bottom: 40px;
+    width: 388px;
   }
 
   .hero-students-container {
@@ -150,7 +152,7 @@
 .hero-students-link:focus .hero-students-icon,
 .hero-students-link:active .hero-students-icon {
   fill: var(--color-BROWN);
-  transform: scale(1.25);
+  transform: scale(1.1);
   z-index: 10;
 }
 

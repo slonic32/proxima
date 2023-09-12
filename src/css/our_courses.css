@@ -59,7 +59,7 @@
 .courses-list-item:hover,
 .courses-list-item:focus,
 .courses-list-item:active {
-  transform: scale(1.25);
+  transform: scale(1.1);
   z-index: 10;
 }
 

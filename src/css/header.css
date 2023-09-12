@@ -89,6 +89,9 @@
   background-color: var(--color-GRAY);
   border-radius: 50%;
   color: rgba(190, 166, 158, 0.4);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: ease-in-out;
 }
 
 @media (min-width: 768px) {

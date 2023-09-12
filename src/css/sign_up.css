@@ -40,6 +40,10 @@
   margin-bottom: 40px;
 }
 
+.sign-form {
+  margin-bottom: 20px;
+}
+
 .sign-form-input {
   color: #fff;
   font-size: 14px;
@@ -56,11 +60,12 @@
   width: 100%;
   max-width: 335px;
   color: var(--color-WHITE);
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: ease-in-out;
   margin-bottom: 8px;
 }
-.sign-form-f {
-  margin-bottom: 40px;
-}
+
 .sign-form-comment {
   height: 112px;
   background: var(--color-BLACK);
@@ -71,10 +76,28 @@
   max-width: 335px;
   color: var(--color-WHITE);
   border-radius: 12px;
+  resize: none;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: ease-in-out;
+  margin-bottom: 40px;
 }
+
+.sign-form-comment:hover,
+.sign-form-comment:active,
+.sign-form-comment:focus {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.sign-form-input:hover,
+.sign-form-input:active,
+.sign-form-input:focus {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
 .sign-form-btn {
   border-radius: 12px;
-  background: var(--color-WHITE);
+  background-color: var(--color-WHITE);
   color: var(--color-BLACK);
   width: 100%;
   max-width: 335px;
@@ -86,7 +109,15 @@
   line-height: 28px;
   /* 155.556% */
   text-transform: uppercase;
-  margin-bottom: 20px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: ease-in-out;
+}
+
+.sign-form-btn:hover,
+.sign-form-btn:focus {
+  color: var(--color-BROWN);
+  background-color: var(--color-GRAY);
 }
 
 .sign-container-wrapper {
@@ -104,7 +135,6 @@
 
 @media only screen and (min-width: 768px) {
   .sign-form-input {
-    margin-bottom: 14px;
     height: 60px;
     min-width: 480px;
     padding: 20px 340px 20px 18px;
@@ -112,6 +142,7 @@
     outline: transparent;
     font-size: 16px;
     line-height: 1.25;
+    margin-bottom: 14px;
   }
   .sign-form-btn {
     width: 479px;

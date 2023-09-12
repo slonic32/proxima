@@ -8,6 +8,17 @@
   margin-bottom: 40px;
 }
 
+.reviews-list li {
+  transition: transform 250ms ease-in-out;
+}
+
+.reviews-list li:hover,
+.reviews-list li:focus,
+.reviews-list li:active {
+  transform: scale(1.1);
+  z-index: 10;
+}
+
 .reviews-list-container-one {
   max-width: 100%;
   border-radius: 12px;
@@ -87,17 +98,6 @@
   .reviews-list {
     display: flex;
     justify-content: center;
-  }
-
-  .reviews-list li {
-    transition: transform 250ms ease-in-out;
-  }
-
-  .reviews-list li:hover,
-  .reviews-list li:focus,
-  .reviews-list li:active {
-    transform: scale(1.25);
-    z-index: 10;
   }
 
   .reviews-list-container-one {

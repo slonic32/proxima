@@ -183,7 +183,7 @@
   transition-duration: 250ms;
   transition-timing-function: ease-in-out;
   animation-name: btn-animation;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
@@ -200,7 +200,7 @@
   }
 
   50% {
-    transform: scale(1.25);
+    transform: scale(1.1);
   }
 
   100% {

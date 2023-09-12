@@ -1,6 +1,6 @@
 .marquee {
   overflow: hidden;
-  color: #FFF;
+  color: #fff;
   font-family: DM Sans;
   font-size: 28px;
   font-style: normal;
@@ -8,14 +8,16 @@
   line-height: 32px;
   letter-spacing: -0.56px;
   text-transform: uppercase;
-  background-color: #121212;
+  background-color: var(--color-BLACK);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .marquee__inner {
   display: flex;
 }
-.purple{
-  color: #BEA69E;
+.purple {
+  color: var(--color-BROWN);
 }
 .marquee__line {
   flex-shrink: 0;
@@ -33,7 +35,7 @@
   from {
     transform: translateX(0);
   }
-  
+
   to {
     transform: translateX(-100%);
   }
@@ -41,9 +43,9 @@
 
 /* Media for Tablet */
 
-@media (min-width: 768px){
-  .marquee{
-    color: #FFF;
+@media (min-width: 768px) {
+  .marquee {
+    color: #fff;
     font-family: DM Sans;
     font-size: 40px;
     font-style: normal;
@@ -51,17 +53,17 @@
     line-height: 50px; /* 125% */
     letter-spacing: -0.8px;
     text-transform: uppercase;
-    }
-    .marquee__line{
-      padding: 24px 15px;
-    }
+  }
+  .marquee__line {
+    padding: 24px 15px;
+  }
 }
 
 /* Media for Laptop */
 
-@media (min-width: 1280px){
-  .marquee{
-    color: #FFF;
+@media (min-width: 1280px) {
+  .marquee {
+    color: #fff;
     font-family: DM Sans;
     font-size: 59px;
     font-style: normal;

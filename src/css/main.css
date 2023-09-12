@@ -19,7 +19,7 @@
 
 .header-hero-container {
   position: absolute;
-  top: 0;
+  top: 0px;
 
   background-image: url(../img/mobile/header_hero_bg.png);
   background-size: cover;

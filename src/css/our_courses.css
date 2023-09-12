@@ -8,7 +8,7 @@
   .courses-container-wrapper {
     flex-direction: row;
     justify-content: space-between;
-    gap: 58;
+    gap: 58px;
     margin-bottom: 50px;
   }
 }

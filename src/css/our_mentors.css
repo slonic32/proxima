@@ -48,6 +48,14 @@ ul {
 }
 .mentor-item-container {
   max-width: 194px;
+  transition: transform 250ms ease-in-out;
+}
+
+.mentor-item-container:hover,
+.mentor-item-container:focus,
+.mentor-item-container:active {
+  transform: scale(1.25);
+  z-index: 10;
 }
 
 /* .mentor-item-container {

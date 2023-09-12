@@ -102,12 +102,31 @@
 
 .svg-fotocamera {
   fill: currentColor;
+  transition: fill 250ms ease-in-out;
+  animation-name: foto-animation;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
 
 .heder-fotokamera:hover .svg-fotocamera,
 .heder-fotokamera:active .svg-fotocamera,
 .heder-fotokamera:focus .svg-fotocamera {
   fill: var(--color-BROWN);
+}
+
+@keyframes foto-animation {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 .heder-menu-burger {
@@ -160,14 +179,33 @@
   border-radius: 12px;
   background-color: var(--color-WHITE);
   border: none;
-  transition-property: background-color;
+  transition-property: background-color, color;
   transition-duration: 250ms;
   transition-timing-function: ease-in-out;
+  animation-name: btn-animation;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
 .btn-singup:hover,
-.btn-singup:focus {
+.btn-singup:focus,
+.btn-singup:active {
   color: var(--color-BROWN);
   background-color: var(--color-GRAY);
+}
+
+@keyframes btn-animation {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.25);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 @media (max-width: 767.98px) {

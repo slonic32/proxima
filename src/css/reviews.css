@@ -16,6 +16,7 @@
   padding-bottom: 20px;
   padding-left: 20px;
   padding-right: 20px;
+  background-color: var(--color-BLACK);
 }
 
 .reviews-list-container-two {
@@ -88,6 +89,17 @@
     justify-content: center;
   }
 
+  .reviews-list li {
+    transition: transform 250ms ease-in-out;
+  }
+
+  .reviews-list li:hover,
+  .reviews-list li:focus,
+  .reviews-list li:active {
+    transform: scale(1.25);
+    z-index: 10;
+  }
+
   .reviews-list-container-one {
     width: 640px;
   }
@@ -153,6 +165,7 @@
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     padding: 20px;
+    background-color: var(--color-BLACK);
   }
 
   .reviews-raiting {

@@ -23,7 +23,7 @@
       referrerpolicy="no-referrer"
     />
     
-    <link rel="stylesheet" href="/proxima/assets/index-161aec52.css">
+    <link rel="stylesheet" href="/proxima/assets/index-9dbe46a2.css">
   </head>
   <body>
     <div class="header-hero-container">
@@ -316,7 +316,7 @@
   </div>
 </section>
 
-    <section>
+    <section class="our-mentors-sevtion">
   <div class="container mentor-section-container">
     <h2 class="text-header-medium header-text-style-mentor">
       Our <span class="text-color">Mentors </span>
@@ -467,38 +467,36 @@
         Please use the form below to contact us. Enter your name, email, and
         message and we'll get back to you shortly.
       </p>
-      <form class="sign-form" name="review-form" novalidate method="post">
-        <div class="sign-form-first">
-          <div class="sign-form-field">
-            <input
-              class="sign-form-input"
-              type="text"
-              name="user-name"
-              id="user-name"
-              required
-              placeholder="Enter your name"
-            />
-          </div>
-        </div>
-        <div class="sign-form-first">
-          <div class="sign-form-field">
-            <input
-              class="sign-form-input"
-              type="email"
-              name="user-email"
-              id="user-email"
-              placeholder="Enter your email"
-            />
-          </div>
-        </div>
-        <div class="sign-form-f">
-          <textarea
-            class="sign-form-comment"
-            name="user-comment"
-            id="user-comment"
-            placeholder="Message"
-          ></textarea>
-        </div>
+      <form class="sign-form" name="review-form">
+        <input
+          class="sign-form-input"
+          type="text"
+          name="user-name"
+          id="user-name"
+          pattern="[A-Za-z]{1,32}"
+          required
+          placeholder="Enter your name"
+          autocomplete="on"
+        />
+
+        <input
+          class="sign-form-input"
+          type="email"
+          name="user-email"
+          id="user-email"
+          placeholder="Enter your email"
+          pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+          required
+          autocomplete="on"
+        />
+
+        <textarea
+          class="sign-form-comment"
+          name="user-comment"
+          id="user-comment"
+          placeholder="Message"
+        ></textarea>
+
         <button class="sign-form-btn" type="submit">Send</button>
       </form>
       <p class="sign-paragraph-bottom text-paragraph">

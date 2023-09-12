@@ -104,7 +104,7 @@
 .heder-fotokamera:hover .svg-fotocamera,
 .heder-fotokamera:active .svg-fotocamera,
 .heder-fotokamera:focus .svg-fotocamera {
-  fill: #bea69e;
+  fill: var(--color-BROWN);
 }
 
 .heder-menu-burger {

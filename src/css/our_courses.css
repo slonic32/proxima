@@ -115,7 +115,26 @@
 .courses-icon {
   stroke: #777777;
   transition: color 250ms ease-in-out;
+  animation-name: icon-animation;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
+
+@keyframes icon-animation {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
 .courses-link-cirle:hover .courses-icon,
 .courses-link-cirle:focus .courses-icon,
 .courses-link-cirle:active .courses-icon {

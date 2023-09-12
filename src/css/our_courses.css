@@ -8,7 +8,7 @@
   .courses-container-wrapper {
     flex-direction: row;
     justify-content: space-between;
-    gap: 0;
+    gap: 58;
     margin-bottom: 50px;
   }
 }
@@ -19,20 +19,19 @@
 @media only screen and (min-width: 768px) {
   .courses-paragraph {
     width: 381px;
-    height: 80px;
-    margin-left: 58px;
   }
 }
 @media only screen and (min-width: 1280px) {
+  .courses-container-wrapper {
+    gap: 410px;
+  }
   .courses-paragraph {
     width: 405px;
-    margin-left: 410px;
   }
 }
 @media only screen and (min-width: 1440px) {
   .courses-paragraph {
     width: 565px;
-    height: 60px;
   }
 }
 .courses-list {
@@ -69,7 +68,6 @@
 }
 @media only screen and (min-width: 1440px) {
   .courses-list-item {
-    max-height: 452px;
   }
 }
 
@@ -110,9 +108,9 @@
   stroke: #777777;
   transition: color 250ms ease-in-out;
 }
-.courses-icon:hover,
-.courses-icon:focus,
-.courses-icon:active {
+.courses-link-cirle:hover .courses-icon,
+.courses-link-cirle:focus .courses-icon,
+.courses-link-cirle:active .courses-icon {
   stroke: var(--color-WHITE);
   fill: var(--color-WHITE);
 }

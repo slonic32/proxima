@@ -20,6 +20,7 @@
   color: var(--color-BROWN);
 }
 .marquee__line {
+  text-align: center;
   flex-shrink: 0;
   margin: 0;
   padding: 20px 15px;

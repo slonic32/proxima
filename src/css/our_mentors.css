@@ -54,7 +54,7 @@ ul {
 .mentor-item-container:hover,
 .mentor-item-container:focus,
 .mentor-item-container:active {
-  transform: scale(1.1);
+  transform: scale(1.05);
   z-index: 10;
 }
 
